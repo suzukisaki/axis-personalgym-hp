@@ -23,7 +23,7 @@ $(function () {
       // ローディングが消えた後に fadein 判定
       fadeInOnScroll();
     });
-  }, 400);
+  }, 800);
 
   // スクロール時にも判定
   $(window).on("scroll", function () {
