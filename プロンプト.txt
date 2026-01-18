@@ -1,0 +1,192 @@
+あなたはWebデザイナー兼フロントエンドエンジニアです。
+imagesフォルダの「デザインカンプ.png」に沿って、
+以下の条件で新規にHTMLファイルとCSSファイルを作成してください。
+
+# 制作条件
+- 個人で行なっているパーソナルトレーニングのHPを作成します。
+- 画像素材はすでにimagesフォルダに用意済み(logo.phg,staff.png,hero-fv.png,flow4.png,flow3.png,flow2.png,flow1.png,feature3.png,feature2.png,feature1.png,concept2.png,concept1.png)
+bg.png）なので、imgタグで読み込む構成にしてください。
+- ファイル構成：
+    index.html
+    styles.css
+- HTMLとCSSは別ファイルとして記述（CSSはlinkタグで読み込み）
+
+# head
+headは以下の型を使ってください
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+        kona｜甘さより、食べごたえ。
+    </title>
+    <meta name="description" content="kona｜甘さより、食べごたえ。。" />
+
+    <!-- OGP -->
+    <meta property="og:site_name" content="murotasayaka|Coaching" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="kona｜甘さより、食べごたえ。" />
+    <meta property="og:description" content="kona｜甘さより、食べごたえ。" />
+    <meta property="og:url" content="https://pronavi.navigator-of-engineering.com/" />
+    <meta property="og:image" content="https://pronavi.navigator-of-engineering.com/img/ogp.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="ja_JP" />
+
+    <!-- X(Twitter)カード -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="kona｜甘さより、食べごたえ。" />
+    <meta name="twitter:description" content="kona｜甘さより、食べごたえ。" />
+    <meta name="twitter:image" content="https://pronavi.navigator-of-engineering.com/img/ogp.png" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://pronavi.navigator-of-engineering.com/" />
+
+    <!-- Favicon & App Icon -->
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://pronavi.navigator-of-engineering.com/img/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://pronavi.navigator-of-engineering.com/img/apple-touch-icon.png" />
+
+    <!-- 構造化データ（Organization） -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "murotasayaka",
+        "url": "https://pronavi.navigator-of-engineering.com/",
+        "description": "kona｜甘さより、食べごたえ。",
+        "email": "noe.co.0126@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "愛知県",
+          "addressLocality": "名古屋市中区",
+          "streetAddress": "丸の内3丁目15-22 丸の内Usビル801号室",
+          "postalCode": "467-0002",
+          "addressCountry": "JP"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "noe.co.0126@gmail.com",
+          "availableLanguage": ["Japanese"]
+        }
+      }
+    </script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Sans+JP:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Zen+Old+Mincho&display=swap"
+        rel="stylesheet">
+
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+
+</head>
+
+
+
+# 文字のクラスは以下を使って
+.small：16px
+.middle：24px
+.section-title：64px
+.section-title-span：16px
+.box-title：24px
+.num：32px
+
+# デザイン・構成
+1. ヘッダー
+   - 左寄せにロゴ画像（logo.png）とnavを配置。右側にcontactボタン
+
+2. ヒーローセクション
+   - 背景に画像「hero-fv.png」。
+   - コピーを左下に配置（Feel better in your body, every day.）
+   - その下にサブコピー（体を整えて、毎日を心地よく。）
+
+3. cenceptセクション
+   - 見出し「身体を整えることは、毎日を整えること」  。「整」はアクセントカラー。クラスは[.section-title]
+   - 見出しの上にspanタグで「concept」クラスは[.section-title-span]
+   - その下に本文「身体を動かしたい理由は、人それぞれ。
+健康でいたい、疲れにくい体になりたい、毎日を心地よく過ごしたい。
+
+でも、何を どのくらい頑張ればいいのか、 一人では分からなくなることもあります。
+
+このトレーニングでは 無理に追い込むのではなく、
+あなたの生活に合ったペースで体を整えていきます。
+
+身体が整うと、気持ちにも自然と余裕が生まれる。
+運動が久しぶりの方や、ジムが初めての方でも 安心して始めていただけます。」
+   - 本文の文字サイズ「small」
+   - 右側に画像２つ「concept1.png」「concept2.png」
+
+4. featureセクション
+   - 見出し「Feature」  。「F」はアクセントカラー。クラスは[.section-title]
+   - 見出しの上にspanタグで「特徴」クラスは[.section-title-span]
+   - ３カラムで、それぞれの箱のサイズは400px
+   - 各カラムは「box-title」の下にそれぞれアイコン（feature1.png,feature2.png,feature3.png）、その下に説明文（.small）
+
+4. Flowセクション
+   - 見出し「Flow」  。「F」はアクセントカラー。クラスは[.section-title]
+   - 見出しの上にspanタグで「トレーニングの流れ」クラスは[.section-title-span]
+   - 4カラム（縦並び）で、それぞれ左側に写真、右側にテキスト   
+   - テキストの中身は数字のあしらい（96px）　その横にタイトル（クラスはbox-title）、その下に詳細（クラスはsmall）   
+
+
+4. Priceセクション
+   - 見出し「price」  。「P」はアクセントカラー。クラスは[.section-title]
+   - 見出しの上にspanタグで「料金」クラスは[.section-title-span]
+   - その下にボックスで中身は以下の通り
+   - 「1回（60分）」クラスはsmall
+   -　「8,800」は64px、spanタグで「円（税込）」は15px
+   - その下に「シンプルで分かりやすい料金設定。無理なく続けられる価格です。」クラスはsmall
+
+4.  Place & Spaceセクション
+   - 左側に見出しと文章　右側に地図「<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.831946134248!2d139.764481112119!3d35.68113977247297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfeba8313b7%3A0xed9bfc268f8f7718!2z5aSn5Li45p2x5Lqs5bqX!5e0!3m2!1sja!2sjp!4v1768603722253!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>」
+   - 見出し「 Place & Space」  。「P」はアクセントカラー。クラスは[.section-title]
+   - 見出しの上にspanタグで「アクセスと設備」クラスは[.section-title-span]
+
+4.  Staffセクション
+   - 左側に画像（staff.png）　右側に詳細  
+   - 見出し「 Staff」  。「S」はアクセントカラー。クラスは[.section-title]
+   - 見出しの上にspanタグで「トレーナーについて」クラスは[.section-title-span]
+   - その下に「Takumi Sato」クラスは.middle
+   - その下に「これまで多くの方のトレーニングをサポートしてきましたが、
+「続かなかった」という声をたくさん聞いてきました。
+だからこそ、無理なく安心して続けられることを大切にしています。一人で不安を抱えず、一緒に体を整えていきましょう。」クラスはsmall
+
+
+4.  FAQセクション
+   - 見出し「FAQ」  。「F」はアクセントカラー。クラスは[.section-title]
+   - 見出しの上にspanタグで「よくある質問」クラスは[.section-title-span]
+ - 見出しの上にspanタグで「トレーニングの流れ」クラスは[.section-title-span]
+
+
+4.  Contactセクション
+   - 見出し「 Staff」  。「S」はアクセントカラー。クラスは[.section-title]
+   - 見出しの上にspanタグで「トレーナーについて」クラスは[.section-title-span]
+   - 見出しの下に「自分に合うか不安な方も、まずはお気軽にご相談ください」　（.small）
+   - 各カラムは「box-title」の下に画像、その下に説明文（.small）
+
+5. フッター
+   - テキスト「明日のおやつは DONUTS SHOP SHEで」
+   - 店舗情報（運営会社・利用規約・お問い合わせ）
+   - ロゴ画像（logo.png）を配置。
+
+# デザイン要件
+- メインカラー：#162521
+- アクセントカラー：#B89B5E
+- フォント：Roboto（日本語）、Poppins（英語）
+- 全体左右の余白は「64」
+- セクションごとの上下の余白は「112」
+- スマートフォン表示にも対応（レスポンシブデザイン）
+
+# 出力形式
+- まずindex.htmlの全文を出力
+- 続けてstyles.cssの全文を出力
